@@ -1,11 +1,11 @@
 import React from "react";
 import { educationData } from "@/data/portfolioData";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { MapPin, Calendar, BookOpen } from "lucide-react";
+import { MapPin, Calendar } from "lucide-react";
 
 export const Education: React.FC = () => {
   return (
-    <section id="education" className="py-20 relative border-t border-slate-900">
+    <section id="education" className="py-12 sm:py-16 relative border-t border-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="Education"
@@ -13,15 +13,21 @@ export const Education: React.FC = () => {
         />
 
         <div className="max-w-2xl">
-          <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm space-y-4">
+          <div className="p-5 sm:p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm space-y-3.5">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <span className="px-2.5 py-0.5 rounded text-xs font-mono bg-indigo-950/60 text-indigo-300 border border-indigo-800/40">
                 {educationData.status}
               </span>
-              <span className="flex items-center gap-1.5 text-xs font-mono text-slate-400">
-                <Calendar className="w-3.5 h-3.5" />
-                {educationData.period}
-              </span>
+              <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="w-3.5 h-3.5" />
+                  {educationData.period}
+                </span>
+                <span className="text-slate-600">·</span>
+                <span className="text-emerald-400 font-medium">
+                  CGPA: {educationData.cgpa}
+                </span>
+              </div>
             </div>
 
             <div>
@@ -41,11 +47,11 @@ export const Education: React.FC = () => {
             </div>
 
             {/* Coursework */}
-            <div className="pt-2 space-y-2">
+            <div className="pt-1 space-y-1.5">
               <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block">
                 Relevant Coursework
               </span>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {educationData.courseworkHighlights.map((course) => (
                   <span
                     key={course}

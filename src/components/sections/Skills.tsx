@@ -19,18 +19,18 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="py-20 relative border-t border-slate-900">
+    <section id="skills" className="py-12 sm:py-16 relative border-t border-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="Skills"
           description="Technologies and concepts I work with."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className="p-5 sm:p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all backdrop-blur-sm group"
+              className="p-4 sm:p-5 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all backdrop-blur-sm group"
             >
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-3">

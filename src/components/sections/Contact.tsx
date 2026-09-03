@@ -46,17 +46,17 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 relative border-t border-slate-900">
+    <section id="contact" className="py-12 sm:py-16 relative border-t border-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="Contact"
           description="Get in touch for internships, project inquiries, or collaborations."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Direct Contact (Left) */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="p-5 sm:p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm space-y-4">
+            <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm space-y-3.5">
               <div>
                 <h3 className="text-base font-bold text-white tracking-tight">
                   Direct Email

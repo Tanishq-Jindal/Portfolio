@@ -38,21 +38,21 @@ export const DeveloperProfiles: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 relative border-t border-slate-900">
+    <section className="py-12 sm:py-16 relative border-t border-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="Profiles"
           description="Profiles across GitHub, LinkedIn, and LeetCode."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
           {profiles.map((p) => (
             <a
               key={p.name}
               href={p.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-5 rounded-2xl bg-gradient-to-b ${p.colorClass} border transition-all duration-200 hover:scale-[1.01] flex flex-col justify-between group`}
+              className={`p-4 sm:p-5 rounded-2xl bg-gradient-to-b ${p.colorClass} border transition-all duration-200 hover:scale-[1.01] flex flex-col justify-between group`}
             >
               <div className="space-y-3">
                 <div className="flex items-center justify-between">

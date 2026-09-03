@@ -9,7 +9,7 @@ export const Projects: React.FC = () => {
   const secondaryProjects = projectsData.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="py-20 relative border-t border-slate-900">
+    <section id="projects" className="py-12 sm:py-16 relative border-t border-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="Projects"
@@ -18,11 +18,11 @@ export const Projects: React.FC = () => {
 
         {/* Featured Project: Nexus-AI */}
         {featuredProject && (
-          <div className="mb-12">
-            <div className="rounded-2xl p-6 sm:p-8 bg-slate-900/40 border border-indigo-500/20 shadow-xl relative overflow-hidden group backdrop-blur-sm">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="mb-8">
+            <div className="rounded-2xl p-5 sm:p-7 bg-slate-900/40 border border-indigo-500/20 shadow-xl relative overflow-hidden group backdrop-blur-sm">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                 {/* Details (Left) */}
-                <div className="lg:col-span-6 space-y-5">
+                <div className="lg:col-span-6 space-y-4">
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
                       <span className="text-xs font-mono font-medium text-indigo-400 bg-indigo-950/60 px-2 py-0.5 rounded border border-indigo-800/40">
@@ -112,11 +112,11 @@ export const Projects: React.FC = () => {
         )}
 
         {/* Secondary Projects: TradeVision & Samaadhan */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {secondaryProjects.map((project) => (
             <div
               key={project.id}
-              className="rounded-2xl p-6 bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-between group backdrop-blur-sm space-y-5"
+              className="rounded-2xl p-5 sm:p-6 bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-between group backdrop-blur-sm space-y-4"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

@@ -245,6 +245,7 @@ export const educationData = {
   period: "2024 – 2028",
   status: "3rd Year",
   location: "Greater Noida, India",
+  cgpa: "8.3 / 10",
   courseworkHighlights: [
     "Data Structures & Algorithms",
     "Object-Oriented Programming",
@@ -253,3 +254,4 @@ export const educationData = {
     "Database Management Systems",
   ],
 };
+

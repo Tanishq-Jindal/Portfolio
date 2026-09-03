@@ -5,17 +5,17 @@ import { Server, Sparkles, Target } from "lucide-react";
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 relative border-t border-slate-900">
+    <section id="about" className="py-12 sm:py-16 relative border-t border-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="About"
           description="Background, technical interests, and focus areas."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
           {/* Narrative (Left) */}
-          <div className="lg:col-span-7 space-y-4 text-slate-300 leading-relaxed text-sm sm:text-base">
-            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm space-y-3">
+          <div className="lg:col-span-7 space-y-3.5 text-slate-300 leading-relaxed text-sm sm:text-base">
+            <div className="p-5 sm:p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm space-y-3">
               <p>
                 I am a 3rd-year Computer Science undergraduate at{" "}
                 <span className="text-white font-medium">Bennett University</span>{" "}

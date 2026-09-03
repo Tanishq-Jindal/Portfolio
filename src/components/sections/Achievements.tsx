@@ -5,14 +5,14 @@ import { Award, ShieldCheck, Cloud, Binary } from "lucide-react";
 
 export const Achievements: React.FC = () => {
   return (
-    <section id="achievements" className="py-20 relative border-t border-slate-900">
+    <section id="achievements" className="py-12 sm:py-16 relative border-t border-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="Achievements"
           description="Certifications and technical milestones."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Hackathon Achievement (Left) */}
           <div className="lg:col-span-5 space-y-3">
             <h3 className="text-xs font-mono uppercase tracking-wider text-slate-400 flex items-center gap-2 mb-2">

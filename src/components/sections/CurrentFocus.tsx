@@ -6,9 +6,9 @@ export const CurrentFocus: React.FC = () => {
   const { currentFocus } = personalInfo;
 
   return (
-    <section className="py-12 relative">
+    <section className="py-6 sm:py-8 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="rounded-2xl p-6 sm:p-8 bg-slate-900/40 border border-slate-800/80 shadow-lg space-y-5 backdrop-blur-sm">
+        <div className="rounded-2xl p-5 sm:p-6 bg-slate-900/40 border border-slate-800/80 shadow-lg space-y-4 backdrop-blur-sm">
           <div className="space-y-1.5 max-w-2xl">
             <span className="text-xs font-mono uppercase tracking-wider text-indigo-400">
               Current Focus
