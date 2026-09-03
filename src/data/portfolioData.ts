@@ -3,21 +3,20 @@ export interface Project {
   name: string;
   subtitle: string;
   tagline: string;
-  description: string;
   featured: boolean;
   technologies: string[];
-  keyFeatures: string[];
-  technicalHighlights: string[];
+  objective: string;
+  approach: string;
+  results: string;
   githubUrl: string;
   liveUrl: string;
-  statsLabel?: string;
   accent: "indigo" | "cyan" | "emerald";
 }
 
 export interface SkillCategory {
   title: string;
   description: string;
-  skills: { name: string; iconName?: string; highlight?: boolean }[];
+  skills: { name: string; highlight?: boolean }[];
 }
 
 export interface Certification {
@@ -37,12 +36,12 @@ export interface Achievement {
 export const personalInfo = {
   name: "Tanishq Jindal",
   role: "Full Stack Developer | AI/ML Enthusiast",
+  status: "Open to Internships & Opportunities",
   headline:
-    "I build full-stack applications and AI-powered software while continuously strengthening my skills in AI/ML and Data Structures & Algorithms.",
+    "Building full-stack applications and AI-powered software while strengthening fundamentals in AI/ML and Data Structures & Algorithms.",
   about: [
-    "I am a 3rd-year Computer Science student at Bennett University with a strong passion for building production-oriented full-stack software and exploring intelligent AI-powered architectures.",
-    "My engineering journey is driven by hands-on execution: architecting autonomous agent pipelines, building low-latency trading interfaces, and creating impactful community platforms. Rather than merely experimenting with prompt wrappers, I focus on systems-level integration—combining durable workflow orchestrations, type-safe APIs, and containerized execution sandboxes.",
-    "Currently, I am actively expanding my knowledge in AI/ML engineering alongside disciplined practice in Data Structures & Algorithms, preparing myself to engineer robust, high-impact software systems.",
+    "I am a 3rd-year Computer Science student at Bennett University (2024–2028) focused on full-stack development and applied AI/ML systems. I enjoy building software that combines robust backend architectures with practical AI workflows.",
+    "My recent projects include an autonomous code-generation sandbox platform, a real-time trading and market intelligence dashboard, and a civic incident tracking system. I am currently deepening my knowledge in AI/ML engineering alongside regular practice in Data Structures & Algorithms, looking for software engineering and AI/ML internship opportunities.",
   ],
   university: "Bennett University",
   degree: "B.Tech in Computer Science",
@@ -60,27 +59,27 @@ export const personalInfo = {
     "Full Stack Developer",
     "Software Developer",
     "AI/ML Engineer",
-    "MLOps-related roles",
+    "MLOps",
   ],
   currentFocus: {
     title: "AI/ML + Data Structures & Algorithms",
     description:
-      "Actively expanding applied AI/ML knowledge and workflow systems while strengthening foundational algorithmic problem-solving in C++ and Python.",
+      "Actively learning AI/ML concepts and agent architectures while strengthening core algorithmic problem-solving in C++ and Python.",
     areas: [
       {
-        topic: "Applied AI Workflows & LLM Systems",
+        topic: "Applied AI & Agent Workflows",
         detail:
-          "Designing agentic state machines, tool iteration loops, and sandboxed code execution environments.",
+          "Designing multi-step tool execution loops, prompt workflows, and sandboxed execution environments.",
       },
       {
         topic: "Data Structures & Algorithms",
         detail:
-          "Daily practice in graph algorithms, dynamic programming, and optimal space/time complexity patterns.",
+          "Practicing problem solving across graphs, dynamic programming, and systems design fundamentals.",
       },
       {
-        topic: "Modern Full-Stack Systems",
+        topic: "Full-Stack Web Systems",
         detail:
-          "Type-safe APIs (tRPC, REST), relational data modeling (PostgreSQL, Prisma), and distributed background workflows (Inngest).",
+          "Type-safe APIs (tRPC, REST), relational databases (PostgreSQL, Prisma), and resilient background task orchestration.",
       },
     ],
   },
@@ -90,10 +89,8 @@ export const projectsData: Project[] = [
   {
     id: "nexus-ai",
     name: "Nexus-AI",
-    subtitle: "Full-Stack AI Builder",
-    tagline: "Autonomous multi-agent cloud development sandbox",
-    description:
-      "A full-stack AI code-generation platform that allows authenticated users to create, persist, and iteratively refine software projects through AI-powered workflows.",
+    subtitle: "AI-Powered Full-Stack Builder",
+    tagline: "Autonomous multi-agent cloud development platform",
     featured: true,
     accent: "indigo",
     technologies: [
@@ -107,22 +104,12 @@ export const projectsData: Project[] = [
       "E2B",
       "Gemini",
     ],
-    keyFeatures: [
-      "Full-stack AI code generation",
-      "Authenticated user projects via Clerk",
-      "Type-safe end-to-end APIs with tRPC",
-      "Persistent project management with Prisma & PostgreSQL",
-      "Autonomous AI agent workflow execution",
-      "Cloud sandbox execution with isolated E2B containers",
-      "Live application previews in real-time",
-      "Dynamic file system generation & command execution",
-    ],
-    technicalHighlights: [
-      "Architected a full-stack AI code-generation platform using Next.js, tRPC, Prisma, PostgreSQL, and Clerk.",
-      "Built a durable 3-stage Gemini agent workflow orchestrated via Inngest and E2B cloud sandboxes.",
-      "Engineered autonomous execution loop capable of running up to 15 multi-tool agent iterations per job.",
-      "Enabled AI agents to safely generate files, execute terminal commands in isolated microVMs, and render live preview frames.",
-    ],
+    objective:
+      "Build an AI-powered platform for generating and iteratively refining full-stack software projects through conversational agent workflows.",
+    approach:
+      "Architected with Next.js, tRPC, Prisma, and Clerk, using Inngest and E2B to orchestrate a multi-stage Gemini agent workflow that generates project files and executes terminal commands inside isolated cloud sandboxes.",
+    results:
+      "Users can create authenticated projects, run multi-iteration AI workflows, safely execute commands in cloud microVMs, and inspect live application previews in real time.",
     githubUrl: "https://github.com/Tanishq-Jindal/Nexus-Ai",
     liveUrl: "https://nexus-ai-rust-kappa.vercel.app/",
   },
@@ -130,9 +117,7 @@ export const projectsData: Project[] = [
     id: "tradevision",
     name: "TradeVision",
     subtitle: "AI Trading Platform",
-    tagline: "Real-time market intelligence & ML-driven portfolio analysis",
-    description:
-      "A full-stack stock trading platform combining real-time market data, portfolio tracking, trading functionality, interactive charts, and AI-powered market analysis.",
+    tagline: "Real-time market analytics & ML-assisted insights",
     featured: false,
     accent: "cyan",
     technologies: [
@@ -144,24 +129,12 @@ export const projectsData: Project[] = [
       "TypeScript",
       "Gemini",
     ],
-    keyFeatures: [
-      "Real-time market streaming data",
-      "Dynamic portfolio tracking & valuation",
-      "Real-time simulated trade execution",
-      "Interactive financial charts & price history",
-      "AI-powered market analysis powered by Gemini",
-      "Technical indicators & quantitative ML signals",
-      "Financial news sentiment extraction",
-      "Portfolio-aware personalized risk insights",
-      "Paginated execution logs & full trade history",
-      "High-density responsive financial dashboard",
-    ],
-    technicalHighlights: [
-      "Built a full-stack stock trading platform with real-time market feeds, portfolio tracking, trade execution, and interactive price charts.",
-      "Integrated Gemini-driven AI market analysis synthesizing technical indicators, ML signals, and news sentiment alongside portfolio context.",
-      "Implemented secure, performant trade history management with paginated execution logs in FastAPI.",
-      "Engineered responsive high-frequency dashboard components with live data hydration and low-latency state updates.",
-    ],
+    objective:
+      "Create a full-stack trading and portfolio intelligence platform combining live market data with AI-driven market analysis.",
+    approach:
+      "Built a responsive Next.js frontend backed by FastAPI services, integrating real-time price charts, simulated trade execution, and Gemini to synthesize technical indicators and financial news sentiment.",
+    results:
+      "Provides responsive trade history tracking, portfolio valuation, and contextual AI market summaries with paginated execution logs and low-latency updates.",
     githubUrl: "https://github.com/Tanishq-Jindal/TradeVision",
     liveUrl: "https://trade-vision-nu.vercel.app/",
   },
@@ -169,30 +142,16 @@ export const projectsData: Project[] = [
     id: "samaadhan",
     name: "Samaadhan",
     subtitle: "Civic Issue Tracker",
-    tagline: "Crowdsourced geo-tagged citizen incident resolution portal",
-    description:
-      "A crowdsourced civic issue reporting platform that enables citizens to report, track, and monitor problems in their local communities.",
+    tagline: "Crowdsourced municipal incident reporting & dispatch",
     featured: false,
     accent: "emerald",
     technologies: ["Python", "HTML", "JavaScript"],
-    keyFeatures: [
-      "Direct civic issue reporting with media upload",
-      "GPS-based automated location detection",
-      "Photo documentation & verification",
-      "Interactive community map overlays",
-      "Automated municipal department routing",
-      "Category-based automated priority assignment",
-      "End-to-end incident lifecycle tracking",
-      "Administrative triage & dispatch dashboard",
-      "Issue analytics & civic resolution statistics",
-      "Advanced status, priority, and department filtering",
-      "Real-time resolution timeline tracking",
-    ],
-    technicalHighlights: [
-      "Developed a crowdsourced civic issue reporting platform addressing real municipal challenges: potholes, streetlights, waste, and water infrastructure.",
-      "Implemented GPS-based location detection, photo documentation, interactive maps, automated department routing, and category-based priority assignment.",
-      "Built an administrative triage dashboard complete with incident analytics, multi-criteria filtering, priority controls, and resolution auditing.",
-    ],
+    objective:
+      "Provide a crowdsourced civic platform for citizens to report local infrastructure issues and track their municipal resolution.",
+    approach:
+      "Developed a web platform using Python, JavaScript, and HTML with GPS location detection, photo verification, interactive map overlays, and automated department routing.",
+    results:
+      "Equips communities with direct issue reporting and provides municipal administrators with an analytics dashboard for triage, priority management, and resolution tracking.",
     githubUrl: "https://github.com/Tanishq-Jindal/Samaadhan",
     liveUrl: "https://civic-issue-tracker-red.vercel.app/",
   },
@@ -211,7 +170,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Backend & APIs",
-    description: "Server architecture and interface protocols",
+    description: "Server architecture and API design",
     skills: [
       { name: "FastAPI", highlight: true },
       { name: "REST APIs", highlight: true },
@@ -219,7 +178,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Core Computer Science",
-    description: "Foundational CS theory and computer systems",
+    description: "Foundational computer science principles",
     skills: [
       { name: "Data Structures & Algorithms", highlight: true },
       { name: "Object-Oriented Programming", highlight: true },
@@ -228,7 +187,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Technologies Used in Projects",
+    title: "Technologies & Tools",
     description: "Frameworks, databases, cloud, and agent runtimes",
     skills: [
       { name: "Next.js", highlight: true },
@@ -273,10 +232,10 @@ export const certificationsData: Certification[] = [
 export const achievementsData: Achievement[] = [
   {
     title: "Smart India Hackathon 2025",
-    context: "Bennett University Selection Round",
+    context: "Bennett University Level",
     year: "2025",
     description:
-      "Participated at University Level, collaborating to architect and pitch technology solutions tackling civic and organizational problem statements.",
+      "Participated at the university selection round, collaborating on an end-to-end technology prototype and pitch for civic problem statements.",
   },
 ];
 
