@@ -11,6 +11,7 @@ import {
   Github,
   Linkedin,
   Code2,
+  Instagram,
   ExternalLink,
 } from "lucide-react";
 
@@ -144,6 +145,20 @@ export const Contact: React.FC = () => {
                     <div className="flex items-center gap-2">
                       <Code2 className="w-4 h-4 text-amber-400" />
                       <span>LeetCode</span>
+                    </div>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
+                  </a>
+
+                  <a
+                    href={personalInfo.links.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-2 rounded-lg bg-slate-950/40 border border-slate-800/70 text-xs text-slate-300 hover:text-pink-400 hover:border-slate-700 transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <div className="flex items-center gap-2">
+                      <Instagram className="w-4 h-4 text-pink-400" />
+                      <span>Instagram</span>
                     </div>
                     <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
                   </a>

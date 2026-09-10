@@ -39,6 +39,16 @@ export interface Hackathon {
   status: string;
 }
 
+export interface Education {
+  degree: string;
+  institution: string;
+  period?: string;
+  status: string;
+  location: string;
+  grade: string;
+  courseworkHighlights?: string[];
+}
+
 export const personalInfo = {
   name: "Tanishq Jindal",
   role: "Full Stack Developer | AI/ML Enthusiast",
@@ -59,6 +69,7 @@ export const personalInfo = {
     github: "https://github.com/Tanishq-Jindal",
     linkedin: "https://www.linkedin.com/in/tanishq-jindal-117096325/",
     leetcode: "https://leetcode.com/u/tanishqjindal10/",
+    instagram: "https://www.instagram.com/tanishq_017/",
     resume: "/resume.pdf",
   },
   targetRoles: [
@@ -270,4 +281,29 @@ export const educationData = {
     "Database Management Systems",
   ],
 };
+
+export const educationList: Education[] = [
+  {
+    degree: "B.Tech in Computer Science",
+    institution: "Bennett University",
+    period: "2024 – 2028",
+    status: "3rd Year",
+    location: "Greater Noida, India",
+    grade: "CGPA: 8.3 / 10",
+    courseworkHighlights: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming",
+      "Operating Systems",
+      "Computer Networks",
+      "Database Management Systems",
+    ],
+  },
+  {
+    degree: "Class 12 — 82.5%",
+    institution: "KCM WORLD SCHOOL",
+    status: "Senior Secondary",
+    location: "Palwal, Haryana",
+    grade: "82.5%",
+  },
+];
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { personalInfo } from "@/data/portfolioData";
-import { Github, Linkedin, Mail, Code2, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Instagram, Code2, Mail, ArrowUp } from "lucide-react";
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -46,6 +46,15 @@ export const Footer: React.FC = () => {
               className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-slate-700 transition-colors"
             >
               <Linkedin className="w-4 h-4" />
+            </a>
+            <a
+              href={personalInfo.links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-pink-400 hover:border-slate-700 transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
             </a>
             <a
               href={personalInfo.links.leetcode}
