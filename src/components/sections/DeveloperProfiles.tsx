@@ -1,7 +1,7 @@
 import React from "react";
 import { personalInfo } from "@/data/portfolioData";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Github, Linkedin, Code2, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Code2, Instagram, ExternalLink } from "lucide-react";
 
 export const DeveloperProfiles: React.FC = () => {
   const profiles = [
@@ -35,6 +35,16 @@ export const DeveloperProfiles: React.FC = () => {
       colorClass: "from-slate-900/60 to-slate-900/30 border-slate-800 hover:border-amber-800/60",
       accent: "text-amber-300",
     },
+    {
+      name: "Instagram",
+      handle: "@tanishq_017",
+      description:
+        "AI-generated content, creative projects, and social updates.",
+      url: personalInfo.links.instagram,
+      icon: <Instagram className="w-5 h-5 text-pink-400" />,
+      colorClass: "from-slate-900/60 to-slate-900/30 border-slate-800 hover:border-pink-800/60",
+      accent: "text-pink-300",
+    },
   ];
 
   return (
@@ -42,10 +52,10 @@ export const DeveloperProfiles: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="Profiles"
-          description="Profiles across GitHub, LinkedIn, and LeetCode."
+          description="Profiles across GitHub, LinkedIn, LeetCode, and Instagram."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {profiles.map((p) => (
             <a
               key={p.name}

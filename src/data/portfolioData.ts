@@ -46,6 +46,7 @@ export interface Education {
   status: string;
   location: string;
   grade: string;
+  courseworkLabel?: string;
   courseworkHighlights?: string[];
 }
 
@@ -122,11 +123,11 @@ export const projectsData: Project[] = [
       "Gemini",
     ],
     objective:
-      "Build an AI-powered platform for generating and iteratively refining full-stack software projects through conversational agent workflows.",
+      "Conversational platform that autonomously architects, codes, and refines full-stack web applications.",
     approach:
-      "Architected with Next.js, tRPC, Prisma, and Clerk, using Inngest and E2B to orchestrate a multi-stage Gemini agent workflow that generates project files and executes terminal commands inside isolated cloud sandboxes.",
+      "Built with Next.js, tRPC, Prisma, and Clerk; orchestrates Gemini agent loops and E2B microVMs via Inngest.",
     results:
-      "Users can create authenticated projects, run multi-iteration AI workflows, safely execute commands in cloud microVMs, and inspect live application previews in real time.",
+      "Executes shell commands in isolated sandboxes, manages code changes, and streams real-time live previews.",
     githubUrl: "https://github.com/Tanishq-Jindal/Nexus-Ai",
     liveUrl: "https://nexus-ai-rust-kappa.vercel.app/",
   },
@@ -147,11 +148,11 @@ export const projectsData: Project[] = [
       "Gemini",
     ],
     objective:
-      "Create a full-stack trading and portfolio intelligence platform combining live market data with AI-driven market analysis.",
+      "Full-stack trading intelligence platform combining live market charts with automated AI analysis.",
     approach:
-      "Built a responsive Next.js frontend backed by FastAPI services, integrating real-time price charts, simulated trade execution, and Gemini to synthesize technical indicators and financial news sentiment.",
+      "FastAPI and Next.js architecture integrating Gemini to analyze technical indicators and financial sentiment.",
     results:
-      "Provides responsive trade history tracking, portfolio valuation, and contextual AI market summaries with paginated execution logs and low-latency updates.",
+      "Delivers real-time simulated trade execution, portfolio tracking, and low-latency market intelligence.",
     githubUrl: "https://github.com/Tanishq-Jindal/TradeVision",
     liveUrl: "https://trade-vision-nu.vercel.app/",
   },
@@ -164,11 +165,11 @@ export const projectsData: Project[] = [
     accent: "emerald",
     technologies: ["Python", "HTML", "JavaScript"],
     objective:
-      "Provide a crowdsourced civic platform for citizens to report local infrastructure issues and track their municipal resolution.",
+      "Crowdsourced municipal incident reporting portal connecting citizens directly with public departments.",
     approach:
-      "Developed a web platform using Python, JavaScript, and HTML with GPS location detection, photo verification, interactive map overlays, and automated department routing.",
+      "Engineered with Python, JavaScript, and HTML featuring GPS geolocation, photo verification, and interactive maps.",
     results:
-      "Equips communities with direct issue reporting and provides municipal administrators with an analytics dashboard for triage, priority management, and resolution tracking.",
+      "Automates department ticket routing and provides administrators with a triage resolution dashboard.",
     githubUrl: "https://github.com/Tanishq-Jindal/Samaadhan",
     liveUrl: "https://civic-issue-tracker-red.vercel.app/",
   },
@@ -290,6 +291,7 @@ export const educationList: Education[] = [
     status: "3rd Year",
     location: "Greater Noida, India",
     grade: "CGPA: 8.3 / 10",
+    courseworkLabel: "Relevant Coursework",
     courseworkHighlights: [
       "Data Structures & Algorithms",
       "Object-Oriented Programming",
@@ -304,6 +306,14 @@ export const educationList: Education[] = [
     status: "Senior Secondary",
     location: "Palwal, Haryana",
     grade: "82.5%",
+    courseworkLabel: "Academic Stream & Focus",
+    courseworkHighlights: [
+      "Physics",
+      "Chemistry",
+      "Mathematics",
+      "Computer Science",
+      "English Core",
+    ],
   },
 ];
 
