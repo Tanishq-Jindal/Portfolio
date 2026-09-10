@@ -33,6 +33,12 @@ export interface Achievement {
   description: string;
 }
 
+export interface Hackathon {
+  number: string;
+  title: string;
+  status: string;
+}
+
 export const personalInfo = {
   name: "Tanishq Jindal",
   role: "Full Stack Developer | AI/ML Enthusiast",
@@ -229,15 +235,25 @@ export const certificationsData: Certification[] = [
   },
 ];
 
-export const achievementsData: Achievement[] = [
+export const hackathonsData: Hackathon[] = [
   {
-    title: "Smart India Hackathon 2025",
-    context: "Bennett University Level",
-    year: "2025",
-    description:
-      "Participated at the university selection round, collaborating on an end-to-end technology prototype and pitch for civic problem statements.",
+    number: "01",
+    title: "SIH Hackathon",
+    status: "PARTICIPATED",
+  },
+  {
+    number: "02",
+    title: "Hackachino",
+    status: "PARTICIPATED",
+  },
+  {
+    number: "03",
+    title: "HCLTech AI Hackathon",
+    status: "PARTICIPATED",
   },
 ];
+
+export const achievementsData = hackathonsData;
 
 export const educationData = {
   degree: "B.Tech in Computer Science",

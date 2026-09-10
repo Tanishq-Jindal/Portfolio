@@ -1,5 +1,5 @@
 import React from "react";
-import { achievementsData, certificationsData } from "@/data/portfolioData";
+import { hackathonsData, certificationsData } from "@/data/portfolioData";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Award, ShieldCheck, Cloud, Binary } from "lucide-react";
 
@@ -13,38 +13,34 @@ export const Achievements: React.FC = () => {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* Hackathon Achievement (Left) */}
+          {/* Hackathons (Left) */}
           <div className="lg:col-span-5 space-y-3">
             <h3 className="text-xs font-mono uppercase tracking-wider text-slate-400 flex items-center gap-2 mb-2">
               <Award className="w-4 h-4 text-indigo-400" />
               <span>Hackathons</span>
             </h3>
 
-            {achievementsData.map((item, index) => (
-              <div
-                key={index}
-                className="p-5 sm:p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all backdrop-blur-sm space-y-2.5"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="px-2.5 py-0.5 rounded text-xs font-mono bg-indigo-950/60 text-indigo-300 border border-indigo-800/40">
-                    {item.year}
-                  </span>
-                  <span className="text-xs font-mono text-slate-400">
-                    {item.context}
+            <div className="space-y-2.5">
+              {hackathonsData.map((item) => (
+                <div
+                  key={item.number}
+                  className="p-4 sm:p-4.5 rounded-xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all backdrop-blur-sm flex items-center justify-between gap-4 group min-h-[58px]"
+                >
+                  <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                    <span className="font-mono text-xs font-semibold text-indigo-400 shrink-0 w-5">
+                      {item.number}
+                    </span>
+                    <h4 className="text-xs sm:text-sm font-semibold text-white group-hover:text-indigo-300 transition-colors truncate">
+                      {item.title}
+                    </h4>
+                  </div>
+
+                  <span className="px-2.5 py-0.5 rounded text-xs font-mono bg-indigo-950/60 text-indigo-300 border border-indigo-800/40 shrink-0 font-medium tracking-wide">
+                    {item.status}
                   </span>
                 </div>
-
-                <div>
-                  <h4 className="text-base font-bold text-white tracking-tight">
-                    {item.title}
-                  </h4>
-                </div>
-
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Certifications (Right) */}
