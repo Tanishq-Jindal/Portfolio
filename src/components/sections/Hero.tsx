@@ -143,11 +143,11 @@ export const Hero: React.FC = () => {
                   <span className="text-slate-500 font-mono block uppercase text-[10px]">
                     Flagship Project
                   </span>
-                  <span className="text-indigo-300 font-medium">
-                    Nexus-AI
+                  <span className="text-emerald-400 font-medium">
+                    Samaadhan
                   </span>
                   <span className="text-slate-400 text-[11px] block">
-                    Autonomous full-stack AI builder with cloud sandboxes
+                    Crowdsourced municipal incident reporting & dispatch
                   </span>
                 </div>
 

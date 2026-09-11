@@ -105,11 +105,28 @@ export const personalInfo = {
 
 export const projectsData: Project[] = [
   {
+    id: "samaadhan",
+    name: "Samaadhan",
+    subtitle: "Civic Issue Tracker",
+    tagline: "Crowdsourced municipal incident reporting & dispatch",
+    featured: true,
+    accent: "emerald",
+    technologies: ["Python", "HTML", "JavaScript"],
+    objective:
+      "Crowdsourced municipal incident reporting portal connecting citizens directly with public departments.",
+    approach:
+      "Engineered with Python, JavaScript, and HTML featuring GPS geolocation, photo verification, and interactive maps.",
+    results:
+      "Automates department ticket routing and provides administrators with a triage resolution dashboard.",
+    githubUrl: "https://github.com/Tanishq-Jindal/Samaadhan",
+    liveUrl: "https://civic-issue-tracker-red.vercel.app/",
+  },
+  {
     id: "nexus-ai",
     name: "Nexus-AI",
     subtitle: "AI-Powered Full-Stack Builder",
     tagline: "Autonomous multi-agent cloud development platform",
-    featured: true,
+    featured: false,
     accent: "indigo",
     technologies: [
       "Next.js",
@@ -151,23 +168,6 @@ export const projectsData: Project[] = [
       "Delivers real-time simulated trade execution, portfolio tracking, and low-latency market intelligence.",
     githubUrl: "https://github.com/Tanishq-Jindal/TradeVision",
     liveUrl: "https://trade-vision-nu.vercel.app/",
-  },
-  {
-    id: "samaadhan",
-    name: "Samaadhan",
-    subtitle: "Civic Issue Tracker",
-    tagline: "Crowdsourced municipal incident reporting & dispatch",
-    featured: false,
-    accent: "emerald",
-    technologies: ["Python", "HTML", "JavaScript"],
-    objective:
-      "Crowdsourced municipal incident reporting portal connecting citizens directly with public departments.",
-    approach:
-      "Engineered with Python, JavaScript, and HTML featuring GPS geolocation, photo verification, and interactive maps.",
-    results:
-      "Automates department ticket routing and provides administrators with a triage resolution dashboard.",
-    githubUrl: "https://github.com/Tanishq-Jindal/Samaadhan",
-    liveUrl: "https://civic-issue-tracker-red.vercel.app/",
   },
 ];
 

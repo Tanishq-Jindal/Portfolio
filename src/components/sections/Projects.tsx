@@ -16,16 +16,19 @@ export const Projects: React.FC = () => {
           description="Selected work across full-stack development and AI-powered systems."
         />
 
-        {/* Featured Project: Nexus-AI */}
+        {/* Featured Project: Samaadhan */}
         {featuredProject && (
           <div className="mb-8">
-            <div className="rounded-2xl p-5 sm:p-7 bg-slate-900/40 border border-indigo-500/20 shadow-xl relative overflow-hidden group backdrop-blur-sm">
+            <div className="rounded-2xl p-5 sm:p-7 bg-slate-900/40 border border-emerald-500/20 shadow-xl relative overflow-hidden group backdrop-blur-sm">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                 {/* Details (Left) */}
                 <div className="lg:col-span-6 space-y-4">
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-mono font-medium text-indigo-400 bg-indigo-950/60 px-2 py-0.5 rounded border border-indigo-800/40">
+                      <span className="text-xs font-mono font-medium text-emerald-400 bg-emerald-950/60 px-2.5 py-0.5 rounded border border-emerald-800/40">
+                        Flagship Project
+                      </span>
+                      <span className="px-2 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300 border border-slate-700">
                         {featuredProject.subtitle}
                       </span>
                     </div>
@@ -40,7 +43,7 @@ export const Projects: React.FC = () => {
                   {/* Objective, Approach, Results structured breakdown */}
                   <div className="space-y-3 text-xs sm:text-sm text-slate-300">
                     <div>
-                      <span className="font-semibold text-white block text-xs uppercase font-mono tracking-wider text-indigo-300 mb-0.5">
+                      <span className="font-semibold text-white block text-xs uppercase font-mono tracking-wider text-emerald-300 mb-0.5">
                         Objective
                       </span>
                       <p className="leading-relaxed text-slate-300">
@@ -49,7 +52,7 @@ export const Projects: React.FC = () => {
                     </div>
 
                     <div>
-                      <span className="font-semibold text-white block text-xs uppercase font-mono tracking-wider text-indigo-300 mb-0.5">
+                      <span className="font-semibold text-white block text-xs uppercase font-mono tracking-wider text-emerald-300 mb-0.5">
                         Approach
                       </span>
                       <p className="leading-relaxed text-slate-300">
@@ -58,7 +61,7 @@ export const Projects: React.FC = () => {
                     </div>
 
                     <div>
-                      <span className="font-semibold text-white block text-xs uppercase font-mono tracking-wider text-indigo-300 mb-0.5">
+                      <span className="font-semibold text-white block text-xs uppercase font-mono tracking-wider text-emerald-300 mb-0.5">
                         Results
                       </span>
                       <p className="leading-relaxed text-slate-300">
@@ -85,7 +88,7 @@ export const Projects: React.FC = () => {
                       href={featuredProject.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-semibold transition-all"
+                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-semibold transition-all shadow-lg shadow-emerald-600/20"
                     >
                       <ExternalLink className="w-3.5 h-3.5" />
                       <span>Live Demo</span>
@@ -111,7 +114,7 @@ export const Projects: React.FC = () => {
           </div>
         )}
 
-        {/* Secondary Projects: TradeVision & Samaadhan */}
+        {/* Secondary Projects: Nexus-AI & TradeVision */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {secondaryProjects.map((project) => (
             <div
