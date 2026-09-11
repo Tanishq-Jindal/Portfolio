@@ -190,6 +190,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "C++", highlight: true },
       { name: "Python", highlight: true },
       { name: "Java", highlight: false },
+      { name: "JavaScript", highlight: true },
     ],
   },
   {
@@ -197,6 +198,11 @@ export const skillCategories: SkillCategory[] = [
     description: "Server architecture, services, and backend systems",
     skills: [
       { name: "Python", highlight: true },
+      { name: "Next.js", highlight: true },
+      { name: "React", highlight: true },
+      { name: "TypeScript", highlight: true },
+      { name: "HTML", highlight: false },
+      { name: "JavaScript", highlight: false },
     ],
   },
   {
