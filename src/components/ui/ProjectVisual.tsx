@@ -131,21 +131,21 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({ projectId }) => {
     ];
 
     return (
-      <div className="rounded-xl overflow-hidden border border-slate-800 bg-[#090d16] shadow-lg p-4 space-y-3">
-        <div className="flex items-center justify-between pb-2 border-b border-slate-800 text-xs">
+      <div className="rounded-xl overflow-hidden border border-slate-800 bg-[#090d16] shadow-xl p-5 space-y-4">
+        <div className="flex items-center justify-between pb-3 border-b border-slate-800/80 text-xs">
           <span className="font-mono text-slate-300 font-medium">
             Platform Capabilities
           </span>
-          <span className="text-[11px] font-mono text-cyan-400 bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-800/40">
+          <span className="text-[11px] font-mono text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">
             FastAPI + AI Engine
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
           {modules.map((m) => (
             <div
               key={m.title}
-              className="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800/80 space-y-1"
+              className="p-3 rounded-lg bg-slate-900/60 border border-slate-800/80 space-y-1 group hover:border-slate-700 transition-colors"
             >
               <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-200">
                 {m.icon}
@@ -156,6 +156,20 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({ projectId }) => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Technology Labels */}
+        <div className="pt-2 border-t border-slate-800/70 flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-slate-400">
+          <span className="text-slate-500 text-[11px]">Core Stack:</span>
+          <div className="flex flex-wrap gap-2 text-[11px]">
+            <span className="text-cyan-300">FastAPI</span>
+            <span className="text-slate-600">·</span>
+            <span className="text-indigo-300">Next.js</span>
+            <span className="text-slate-600">·</span>
+            <span className="text-emerald-300">Python</span>
+            <span className="text-slate-600">·</span>
+            <span className="text-slate-300">TypeScript</span>
+          </div>
         </div>
       </div>
     );
