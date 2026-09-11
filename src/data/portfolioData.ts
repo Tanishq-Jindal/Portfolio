@@ -52,7 +52,7 @@ export interface Education {
 
 export const personalInfo = {
   name: "Tanishq Jindal",
-  role: "Full Stack Developer | AI/ML Enthusiast",
+  role: "Full Stack Developer",
   status: "Open to Internships & Opportunities",
   headline:
     "Building full-stack applications and AI-powered software while strengthening fundamentals in AI/ML and Data Structures & Algorithms.",

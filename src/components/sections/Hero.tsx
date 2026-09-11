@@ -34,9 +34,14 @@ export const Hero: React.FC = () => {
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
                 {personalInfo.name}
               </h1>
-              <p className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-indigo-300 via-indigo-200 to-cyan-300 bg-clip-text text-transparent">
-                {personalInfo.role}
-              </p>
+              <div className="pt-0.5 space-y-0.5">
+                <span className="text-xs sm:text-sm font-mono uppercase tracking-wider text-slate-400 font-medium block">
+                  Computer Science Student
+                </span>
+                <p className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-indigo-300 via-indigo-200 to-cyan-300 bg-clip-text text-transparent">
+                  {personalInfo.role}
+                </p>
+              </div>
             </div>
 
             {/* Concise Supporting Statement */}
