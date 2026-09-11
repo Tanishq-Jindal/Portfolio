@@ -70,7 +70,7 @@ export const About: React.FC = () => {
                 <span>Full-Stack Development</span>
               </div>
               <p className="text-xs text-slate-400 leading-relaxed pl-8">
-                Building with Next.js, React, TypeScript, FastAPI, tRPC, PostgreSQL, and Prisma.
+                Building with Next.js, React, TypeScript, FastAPI, PostgreSQL, and Prisma.
               </p>
             </div>
 
@@ -82,7 +82,7 @@ export const About: React.FC = () => {
                 <span>AI/ML & Agent Systems</span>
               </div>
               <p className="text-xs text-slate-400 leading-relaxed pl-8">
-                Orchestrating Gemini agent loops, Inngest workflows, and isolated E2B execution sandboxes.
+                Orchestrating autonomous AI agent loops, Inngest workflows, and isolated cloud execution sandboxes.
               </p>
             </div>
 

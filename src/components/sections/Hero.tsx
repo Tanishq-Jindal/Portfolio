@@ -151,7 +151,7 @@ export const Hero: React.FC = () => {
                     Core Stack
                   </span>
                   <div className="flex flex-wrap gap-1.5 pt-1">
-                    {["Next.js", "TypeScript", "FastAPI", "Python", "Gemini", "tRPC", "PostgreSQL"].map((t) => (
+                    {["Next.js", "React", "TypeScript", "FastAPI", "Python", "PostgreSQL"].map((t) => (
                       <span
                         key={t}
                         className="px-2 py-0.5 rounded bg-slate-800/80 text-slate-300 border border-slate-700/60 font-mono text-[11px]"

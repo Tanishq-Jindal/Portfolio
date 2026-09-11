@@ -1,7 +1,7 @@
 import React from "react";
 import { skillCategories } from "@/data/portfolioData";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Code, Terminal, Layers, Cpu } from "lucide-react";
+import { Code, Terminal, Server, Cpu, Layers } from "lucide-react";
 
 export const Skills: React.FC = () => {
   const getCategoryIcon = (index: number) => {
@@ -11,8 +11,9 @@ export const Skills: React.FC = () => {
       case 1:
         return <Terminal className="w-4 h-4 text-cyan-400" />;
       case 2:
-        return <Cpu className="w-4 h-4 text-emerald-400" />;
+        return <Server className="w-4 h-4 text-emerald-400" />;
       case 3:
+        return <Cpu className="w-4 h-4 text-amber-400" />;
       default:
         return <Layers className="w-4 h-4 text-indigo-400" />;
     }
@@ -26,14 +27,14 @@ export const Skills: React.FC = () => {
           description="Technologies and concepts I work with."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className="p-4 sm:p-5 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all backdrop-blur-sm group"
+              className="p-5 sm:p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all backdrop-blur-sm group flex flex-col justify-start"
             >
               {/* Category Header */}
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-3 mb-3.5">
                 <div className="p-2 rounded-lg bg-slate-800/80 border border-slate-700/60">
                   {getCategoryIcon(index)}
                 </div>

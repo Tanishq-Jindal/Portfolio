@@ -97,7 +97,7 @@ export const personalInfo = {
       {
         topic: "Full-Stack Web Systems",
         detail:
-          "Type-safe APIs (tRPC, REST), relational databases (PostgreSQL, Prisma), and resilient background task orchestration.",
+          "Type-safe REST APIs, relational databases (PostgreSQL, Prisma), and resilient background task orchestration.",
       },
     ],
   },
@@ -173,21 +173,30 @@ export const projectsData: Project[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
+    title: "Frontend",
+    description: "Modern web interfaces, component architecture, and responsive design",
+    skills: [
+      { name: "Next.js", highlight: true },
+      { name: "React", highlight: true },
+      { name: "TypeScript", highlight: true },
+      { name: "HTML", highlight: false },
+      { name: "JavaScript", highlight: false },
+    ],
+  },
+  {
     title: "Programming Languages",
     description: "Core languages used for systems, scripting, and backend",
     skills: [
       { name: "C++", highlight: true },
       { name: "Python", highlight: true },
       { name: "Java", highlight: false },
-      { name: "TypeScript", highlight: true },
     ],
   },
   {
-    title: "Backend & APIs",
-    description: "Server architecture and API design",
+    title: "Backend",
+    description: "Server architecture, services, and backend systems",
     skills: [
-      { name: "FastAPI", highlight: true },
-      { name: "REST APIs", highlight: true },
+      { name: "Python", highlight: true },
     ],
   },
   {
@@ -198,26 +207,6 @@ export const skillCategories: SkillCategory[] = [
       { name: "Object-Oriented Programming", highlight: true },
       { name: "Operating Systems", highlight: false },
       { name: "Computer Networks", highlight: false },
-    ],
-  },
-  {
-    title: "Technologies & Tools",
-    description: "Frameworks, databases, cloud, and agent runtimes",
-    skills: [
-      { name: "Next.js", highlight: true },
-      { name: "React", highlight: true },
-      { name: "TypeScript", highlight: true },
-      { name: "JavaScript", highlight: false },
-      { name: "Python", highlight: true },
-      { name: "FastAPI", highlight: true },
-      { name: "tRPC", highlight: true },
-      { name: "PostgreSQL", highlight: true },
-      { name: "Prisma", highlight: true },
-      { name: "Clerk", highlight: false },
-      { name: "Inngest", highlight: true },
-      { name: "E2B", highlight: true },
-      { name: "Gemini", highlight: true },
-      { name: "HTML", highlight: false },
     ],
   },
 ];
@@ -312,7 +301,7 @@ export const educationList: Education[] = [
       "Physics",
       "Chemistry",
       "Mathematics",
-      "Computer Science",
+      "Physical Education",
       "English Core",
     ],
   },
