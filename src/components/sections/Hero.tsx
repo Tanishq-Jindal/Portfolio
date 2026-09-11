@@ -142,7 +142,7 @@ export const Hero: React.FC = () => {
                     Nexus-AI
                   </span>
                   <span className="text-slate-400 text-[11px] block">
-                    Autonomous full-stack AI builder with E2B cloud sandboxes
+                    Autonomous full-stack AI builder with cloud sandboxes
                   </span>
                 </div>
 

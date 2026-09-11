@@ -30,7 +30,7 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({ projectId }) => {
         icon: <MessageSquare className="w-3.5 h-3.5 text-slate-400" />,
       },
       {
-        name: "Gemini Agent",
+        name: "AI Agent",
         desc: "Plan schema, tools & file structure",
         icon: <Sparkles className="w-3.5 h-3.5 text-indigo-400" />,
       },
@@ -40,7 +40,7 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({ projectId }) => {
         icon: <Workflow className="w-3.5 h-3.5 text-cyan-400" />,
       },
       {
-        name: "E2B Sandbox",
+        name: "Cloud Sandbox",
         desc: "Isolated cloud microVM execution",
         icon: <Box className="w-3.5 h-3.5 text-emerald-400" />,
       },
@@ -98,13 +98,9 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({ projectId }) => {
         <div className="pt-2 border-t border-slate-800/70 flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-slate-400">
           <span className="text-slate-500 text-[11px]">Core Stack:</span>
           <div className="flex flex-wrap gap-2 text-[11px]">
-            <span className="text-indigo-300">Gemini</span>
-            <span className="text-slate-600">·</span>
             <span className="text-cyan-300">Inngest</span>
             <span className="text-slate-600">·</span>
-            <span className="text-emerald-300">E2B</span>
-            <span className="text-slate-600">·</span>
-            <span className="text-slate-300">tRPC</span>
+            <span className="text-slate-300">PostgreSQL</span>
             <span className="text-slate-600">·</span>
             <span className="text-slate-300">Prisma</span>
             <span className="text-slate-600">·</span>
@@ -123,7 +119,7 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({ projectId }) => {
         icon: <LineChart className="w-4 h-4 text-cyan-400" />,
       },
       {
-        title: "Gemini Market Intelligence",
+        title: "AI Market Intelligence",
         desc: "Multi-factor analysis combining technical indicators and news sentiment.",
         icon: <BrainCircuit className="w-4 h-4 text-indigo-400" />,
       },
@@ -141,7 +137,7 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({ projectId }) => {
             Platform Capabilities
           </span>
           <span className="text-[11px] font-mono text-cyan-400 bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-800/40">
-            FastAPI + Gemini Core
+            FastAPI + AI Engine
           </span>
         </div>
 

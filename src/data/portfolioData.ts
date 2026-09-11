@@ -114,18 +114,15 @@ export const projectsData: Project[] = [
     technologies: [
       "Next.js",
       "TypeScript",
-      "tRPC",
       "PostgreSQL",
       "Prisma",
       "Clerk",
       "Inngest",
-      "E2B",
-      "Gemini",
     ],
     objective:
       "Conversational platform that autonomously architects, codes, and refines full-stack web applications.",
     approach:
-      "Built with Next.js, tRPC, Prisma, and Clerk; orchestrates Gemini agent loops and E2B microVMs via Inngest.",
+      "Built with Next.js, Prisma, PostgreSQL, and Clerk; orchestrates multi-step autonomous agent workflows via Inngest.",
     results:
       "Executes shell commands in isolated sandboxes, manages code changes, and streams real-time live previews.",
     githubUrl: "https://github.com/Tanishq-Jindal/Nexus-Ai",
@@ -145,12 +142,11 @@ export const projectsData: Project[] = [
       "JavaScript",
       "HTML",
       "TypeScript",
-      "Gemini",
     ],
     objective:
       "Full-stack trading intelligence platform combining live market charts with automated AI analysis.",
     approach:
-      "FastAPI and Next.js architecture integrating Gemini to analyze technical indicators and financial sentiment.",
+      "FastAPI and Next.js architecture integrating an AI Engine to analyze technical indicators and financial sentiment.",
     results:
       "Delivers real-time simulated trade execution, portfolio tracking, and low-latency market intelligence.",
     githubUrl: "https://github.com/Tanishq-Jindal/TradeVision",
@@ -261,6 +257,11 @@ export const hackathonsData: Hackathon[] = [
   {
     number: "03",
     title: "HCLTech AI Hackathon",
+    status: "PARTICIPATED",
+  },
+  {
+    number: "04",
+    title: "Multi University Hackathon",
     status: "PARTICIPATED",
   },
 ];

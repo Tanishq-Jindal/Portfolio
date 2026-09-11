@@ -12,9 +12,9 @@ export const Achievements: React.FC = () => {
           description="Certifications and technical milestones."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           {/* Hackathons (Left) */}
-          <div className="lg:col-span-5 space-y-3">
+          <div className="space-y-3">
             <h3 className="text-xs font-mono uppercase tracking-wider text-slate-400 flex items-center gap-2 mb-2">
               <Award className="w-4 h-4 text-indigo-400" />
               <span>Hackathons</span>
@@ -44,7 +44,7 @@ export const Achievements: React.FC = () => {
           </div>
 
           {/* Certifications (Right) */}
-          <div className="lg:col-span-7 space-y-3">
+          <div className="space-y-3">
             <h3 className="text-xs font-mono uppercase tracking-wider text-slate-400 flex items-center gap-2 mb-2">
               <ShieldCheck className="w-4 h-4 text-cyan-400" />
               <span>Certifications</span>
